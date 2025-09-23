@@ -3,8 +3,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-red.svg)](https://pytorch.org/)
+[![Website](https://img.shields.io/badge/Website-Online-brightgreen.svg)](https://tech4dlab.github.io/multimodal-contrastive-learning-for-clinical-data-alignment-via-fat-composition-representations)
+
 
 ## Overview
+
+![Methodology Overview](docs/static/images/methodology.png)
 
 This repository implements a multimodal contrastive learning framework inspired by CLIP, specifically designed to align seven heterogeneous clinical modalities related to obesity research. The framework uses fat composition as an anchor modality to create meaningful representations across different types of clinical data.
 
