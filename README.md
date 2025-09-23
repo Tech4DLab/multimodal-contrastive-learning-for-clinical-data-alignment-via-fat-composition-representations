@@ -232,7 +232,7 @@ The framework demonstrates competitive or superior performance compared to tradi
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{SanchezSos2024MultimodalContrastive,
+@article{SanchezSos2054MultimodalContrastive,
   title={Multimodal Contrastive Learning for Clinical Data Alignment via Fat Composition Representations},
   author={Bernabé Sánchez-Sos and Mario Tomé-Fernández and Ismael Beviá-Ballesteros and Mario Jerez-Tallón and Nahuel García-D'Urso and Jorge Azorín-López and Marcelo Saval-Calvo and Andrés Fuster-Guilló and Miriam Sánchez-SanSegundo},
   journal={UCAmI 2025},
