@@ -5,7 +5,6 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-red.svg)](https://pytorch.org/)
 [![Website](https://img.shields.io/badge/Website-Online-brightgreen.svg)](https://tech4dlab.github.io/multimodal-contrastive-learning-for-clinical-data-alignment-via-fat-composition-representations)
 
-
 ## Overview
 
 ![Methodology Overview](docs/static/images/methodology.png)
@@ -44,8 +43,6 @@ multimodal-contrastive-learning-for-clinical-data-alignment-via-fat-composition-
     ├── css/                       # Stylesheets
     ├── images/                    # Research images and visualizations
     ├── js/                        # JavaScript files
-    ├── pdfs/                      # Papers and documentation
-    └── videos/                    # Demo videos
 ```
 
 ## Requirements
@@ -184,28 +181,17 @@ The framework demonstrates competitive or superior performance compared to tradi
 
 ### ⚠️ Important Restrictions
 
-1. **Data Privacy**: 
-   - This code handles sensitive clinical data
-   - Ensure compliance with HIPAA, GDPR, or relevant data protection regulations
-   - Never commit real patient data to version control
-   - Use anonymized/synthetic data for testing
-
-2. **Research Use Only**:
+1. **Research Use Only**:
    - This implementation is for research purposes
    - Not validated for clinical decision-making
    - Requires proper medical supervision for any clinical applications
 
-3. **Data Requirements**:
+2. **Data Requirements**:
    - Requires specific clinical modalities as defined above
    - Data must be properly normalized and preprocessed
    - Missing data patterns may affect performance
 
-4. **Computational Constraints**:
-   - Training requires significant computational resources
-   - GPU recommended for reasonable training times
-   - Memory requirements scale with dataset size
-
-5. **Hyperparameter Sensitivity**:
+3. **Hyperparameter Sensitivity**:
    - Alpha parameter significantly affects alignment quality
    - Temperature parameter affects contrastive learning dynamics
    - May require dataset-specific tuning
@@ -217,30 +203,33 @@ The framework demonstrates competitive or superior performance compared to tradi
 - **Generalization**: Trained on specific clinical domains and populations
 - **Evaluation Metrics**: Limited to MAE and MRE for imputation quality
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Development Guidelines
-- Follow PEP 8 style guidelines
-- Add docstrings for all functions and classes
-- Include unit tests for new functionality
-- Update documentation for any API changes
 
 ## Citation
 
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{SanchezSos2054MultimodalContrastive,
-  title={Multimodal Contrastive Learning for Clinical Data Alignment via Fat Composition Representations},
-  author={Bernabé Sánchez-Sos and Mario Tomé-Fernández and Ismael Beviá-Ballesteros and Mario Jerez-Tallón and Nahuel García-D'Urso and Jorge Azorín-López and Marcelo Saval-Calvo and Andrés Fuster-Guilló and Miriam Sánchez-SanSegundo},
-  journal={UCAmI 2025},
-  year={2025}
+@InProceedings{10.1007/978-3-032-16992-1_5,
+author="S{\'a}nchez-Sos, Bernab{\'e}
+and Tom{\'e}-Fern{\'a}ndez, Mario
+and Bevi{\'a}-Ballesteros, Ismael
+and Jerez-Tall{\'o}n, Mario
+and Garc{\'i}a-D'Urso, Nahuel
+and Azor{\'i}n-L{\'o}pez, Jorge
+and Saval-Calvo, Marcelo
+and Fuster-Guill{\'o}, Andr{\'e}s
+and S{\'a}nchez-SanSegundo, Miriam",
+editor="Bravo, Jos{\'e}
+and Fontecha, Jes{\'u}s
+and Ballesteros, Joaqu{\'i}n",
+title="Multimodal Contrastive Learning for Clinical Data Alignment via Fat Composition Representations",
+booktitle="Proceedings of the International Conference on Ubiquitous Computing and Ambient Intelligence (UCAmI 2025), Volume 1",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="45--50",
+abstract="This work proposes a multimodal contrastive learning framework inspired by CLIP, designed to align seven heterogeneous clinical modalities related to obesity: fat composition, muscle composition, biochemistry, anthropometry, demographics, metabolic profile, and cardiovascular physiology. Each modality is encoded through a dedicated neural network and projected into a shared latent space, with fat composition used as the anchor modality during training. A control parameter is introduced to balance the intra-modality contribution and fat-modality alignment, enhancing cluster separability and semantic coherence. Furthermore, the framework is evaluated for its capacity to reconstruct missing modalities in the latent space through similarity-based imputation. The method is benchmarked against traditional imputation approaches such as KNN and MICE, showing competitive or superior performance across multiple clinical targets. The results demonstrate the framework's potential to effectively align complex clinical data and enable meaningful patient stratification, contributing to more personalized and accurate obesity phenotyping in clinical and research settings. https://tech4dlab.github.io/multimodal-contrastive-learning-for-clinical-data-alignment-via-fat-composition-representations",
+isbn="978-3-032-16992-1"
 }
 ```
 
@@ -250,16 +239,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- University of Alicante - Department of Computer Technology
-- University of Alicante - Department of Health Psychology
-- UCAmI 2025 Conference
-- CLIP paper authors for the original contrastive learning framework
+This work was supported by grant PID2023-149562OB-I00 funded by MICIU/AEI/
+10.13039/501100011033 and by ERDF/EU and by grant CIAICO/2022/132 funded
+by Conselleria d’Innovació, Universitat, Ciència i Societat Digital. Predoctoral support
+(PREP2023-001644) was provided by MICIU/AEI/10.13039/501100011033 and ESF+
 
 ## Contact
 
-- **Bernabé Sánchez-Sos** - [ResearchGate Profile](https://www.researchgate.net/profile/Bernabe-Sanchez-Sos)
+- **Bernabé Sánchez-Sos** - [LinkedIn Profile](https://www.linkedin.com/in/bernabé-sánchez-591479257/)
 - **Mario Tomé Fernández** - [LinkedIn Profile](https://www.linkedin.com/in/mario-tomé-fernández-86a308352/)
-- **Project Repository** - [GitHub](https://github.com/Bernabe19/multimodal-contrastive-learning-for-clinical-data-alignment-via-fat-composition-representations)
 
 ---
 
